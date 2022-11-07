@@ -25,4 +25,24 @@ public class Iterator {
         }
         System.out.println();
     }
+
+    // Next function from prompt
+    public void next() {
+        if (!hasNext()) {
+            System.out.printf("\nThere are no more elements in the list");
+        }
+        else {
+            System.out.printf("\n%d", nums.peek());
+            nums.remove();
+        }
+    }
+
+    // hasNext function from prompt
+    public Boolean hasNext(){
+        Boolean hasNext = true;
+        if (nums.peek() == null) {
+            hasNext = false;
+        }
+        return hasNext;
+    }
 }

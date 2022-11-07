@@ -21,7 +21,11 @@ public class App
         Integer[][] arr = {{1,2}, {3}, {}, {4, 5, 6}};
         // Declare Iterator object
         Iterator list = new Iterator(arr);
-        list.printObject();
+        
+        while (list.hasNext() == true){
+            list.next();
+        }
+        
         System.out.println( "Hello World!" );
     }
 }
