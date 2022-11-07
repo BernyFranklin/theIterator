@@ -17,6 +17,11 @@ public class App
 {
     public static void main( String[] args )
     {
+        // Declare a 2d array
+        Integer[][] arr = {{1,2}, {3}, {}, {4, 5, 6}};
+        // Declare Iterator object
+        Iterator list = new Iterator(arr);
+        list.printObject();
         System.out.println( "Hello World!" );
     }
 }

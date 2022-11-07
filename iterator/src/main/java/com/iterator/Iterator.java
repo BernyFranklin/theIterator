@@ -4,10 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Iterator {
+    Queue<Integer> nums = new LinkedList<Integer>();
     // Constructor
     public Iterator(Integer[][] arr) {
-        // Store elements of arrays into Queue
-        Queue<Integer> nums = new LinkedList<Integer>();
         // Iterate outer arrays
         for (int i = 0; i < arr.length; i++) {
             // Iterate the elements in the outer arrays
@@ -17,4 +16,13 @@ public class Iterator {
             }
         }
     }   // End of constructor
+
+    // Print function
+    public void printObject() {
+        System.out.printf("\nElements to be output: ");
+        for (int elem: nums) {
+            System.out.printf("\t%d", elem);
+        }
+        System.out.println();
+    }
 }
