@@ -22,10 +22,11 @@ public class App
         // Declare Iterator object
         Iterator list = new Iterator(arr);
         
-        while (list.hasNext() == true){
+        while (list.hasNext() == true) {
             list.next();
         }
-        
-        System.out.println( "Hello World!" );
+        list.next();
+        System.out.println();
+
     }
 }
