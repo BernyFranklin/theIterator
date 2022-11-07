@@ -21,10 +21,11 @@ public class App
         Integer[][] arr = {{1,2}, {3}, {}, {4, 5, 6}};
         // Declare Iterator object
         Iterator list = new Iterator(arr);
-        
+        // Print next elem
         while (list.hasNext() == true) {
             list.next();
         }
+        // Demonstrate what happens when we run out
         list.next();
         System.out.println();
 
